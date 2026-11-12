@@ -5,6 +5,7 @@ const pokemonDataDiv = document.getElementById('pokemonData');
 const fetchPokemon = async () => {
     const query = pokemonNameInput.value.toLowerCase().trim();
     if (!query) {
+        
         displayError('Please enter a Pokémon name or ID.');
         return;
     }
